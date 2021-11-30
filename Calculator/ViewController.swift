@@ -107,7 +107,7 @@ class ViewController: UIViewController {
     
     private var variables = Dictionary<String,Double>() {
         didSet {
-            memoryDisplay.text = variables.flatMap{$0+":\($1)"}.joined(separator: ", ").beautifyNumbers()
+            memoryDisplay.text = variables.compactMap{$0+":\($1)"}.joined(separator: ", ").beautifyNumbers()
         }
     }
     
@@ -157,7 +157,7 @@ class ViewController: UIViewController {
 }
 
 extension UIButton {
-    func setBackgroundColor(_ color: UIColor, forState state: UIControlState) {
+    func setBackgroundColor(_ color: UIColor, forState state: UIControl.State) {
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
         let context = UIGraphicsGetCurrentContext();
