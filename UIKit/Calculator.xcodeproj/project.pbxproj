@@ -32,7 +32,6 @@
 		5B7282231E8CF23E00CDF81B /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7282251E8CF23E00CDF81B /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		5B7282271E8CF23E00CDF81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B7BDB991E85D7590087EF1E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BBA29961E81E38D00333367 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBA29991E81E38D00333367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBA299B1E81E38D00333367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +71,6 @@
 		5BBA298D1E81E38D00333367 = {
 			isa = PBXGroup;
 			children = (
-				5B7BDB991E85D7590087EF1E /* README.md */,
 				5BBA29981E81E38D00333367 /* Calculator */,
 				5B7282241E8CF23E00CDF81B /* CalculatorTests */,
 				5BBA29971E81E38D00333367 /* Products */,
@@ -411,6 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = at.m2m.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -424,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = at.m2m.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

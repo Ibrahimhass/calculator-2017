@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
-        //print("\(digit) was touched")
         
         if userIsInTheMiddleOfTyping {
             let textCurrentlyInDisplay = display.text!
@@ -46,12 +45,7 @@ class ViewController: UIViewController {
     }
     
     var displayValue: Double {
-        get {
-            return (NumberFormatter().number(from: display.text!)?.doubleValue)!
-        }
-        set {
-            display.text = String(newValue).beautifyNumbers()
-        }
+        return (NumberFormatter().number(from: display.text!)?.doubleValue)!
     }
     
     private var brain = CalculatorBrain()
@@ -62,7 +56,7 @@ class ViewController: UIViewController {
         if let error = evaluated.error {
             display.text = error
         } else if let result = evaluated.result {
-            displayValue = result
+            display.text = String(result).beautifyNumbers()
         }
         
         if "" != evaluated.description {
